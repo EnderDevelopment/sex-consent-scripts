@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Lantern at Low Tide — Interactive Script</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="stage">
+    <header class="stage__header">
+      <p class="kicker">Interactive script · 13 scenes · 5 endings</p>
+      <h1 class="stage__title">The Lantern at Low Tide</h1>
+      <p class="stage__subtitle">Every button is labelled with the action it performs. Click one to move the scene forward.</p>
+    </header>
+    <section class="scene" aria-live="polite">
+      <h2 id="scene-title" class="scene__title">Loading…</h2>
+      <p id="scene-text" class="scene__text"></p>
+    </section>
+    <section class="choices" aria-labelledby="choices-label">
+      <h2 id="choices-label" class="section__label">What do you do?</h2>
+      <div id="choices" class="choices__list"></div>
+    </section>
+    <section class="log" aria-labelledby="log-label">
+      <h2 id="log-label" class="section__label">Your path so far</h2>
+      <ol id="log" class="log__list"></ol>
+      <p id="log-empty" class="log__empty">No choices yet — your decisions will appear here.</p>
+    </section>
+    <button id="restart" class="restart" type="button">Restart story from the beginning</button>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
